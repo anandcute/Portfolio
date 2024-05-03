@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8e9058e85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ---------------------------------header------------------------------- -->
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <img src="https://cdn0.iconfinder.com/data/icons/fillicons-information-technology/1550/programmer_software_developer-1024.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Anandkumar D</span> </h1>
+                <p>Software Developer,</p><h3>From India</h3>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about----------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aa.jpg" alt="profile-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a final year student at Anand Institute of Higher Technology, currently pursuing
+                         a Bachelor of Engineering in Computer Science and Engineering. My passion for
+                          technology and creativity has led me to specialize in Full stack development, 
+                          where I craft visually appealing and user-friendly websites.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Full Stack</span><br> Development</li>
+                            <!-- <li><span>Web Design</span><br>Web Development</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li><span>Mini Project</span><br>Chatbot</li>
+                            <li><span>Portfolio</span><br>My Personal Portfolio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Anand Institute Of Higher Technology</li>
+                            <li><span>Bachelor of Engineering</span><br>Computer Science and Engineering</li>
+                            <li><span>City</span><br>Chennai</li>
+                            <li><span>State</span><br>Tamil Nadu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------services---------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java Full Stack Development</h2>
+                    <p>Whether you need a stunning website from scratch or a redesign 
+                        of your existing site, I offer creative and user-centric web design
+                         solutions. I'll work closely with you to create a visually appealing 
+                         and responsive website that represents your brand and engages your audience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Mini Project</h2>
+                    <p>Looking for a custom web application or a mini project?
+                         I specialize in developing web-based solutions tailored to your 
+                         specific needs. From project planning to implementation, I'll ensure your
+                          web application is efficient, functional, and user-friendly.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p> add some content for the web design services list</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------portfolio--------------------? -->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://th.bing.com/th/id/OIP.Btr2RdON50pZu_lOPOBeiwHaHa?w=980&h=980&rs=1&pid=ImgDetMain" alt="work1">
+                    <div class="layer">
+                        <h3>Courier Management System</h3>
+                        <p>My Courier Management System project is a comprehensive solution designed to 
+                            streamline and enhance the courier and logistics processes. It includes features 
+                            such as real-time package tracking, automated order management, and efficient
+                             route planning. The system is built for businesses of all sizes to optimize
+                              their courier operations, improve customer satisfaction, and reduce operational
+                            costs.</p>
+                        <a href="https://github.com/PugazhendhiK03/mini-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://th.bing.com/th/id/OIP.ZZpK4s6LnvnG5nmUzG82YQAAAA?w=400&h=400&rs=1&pid=ImgDetMain" alt="work2">
+                    <div class="layer">
+                        <h3>Travel blog</h3>
+                        <p>My Travel Blog is a personal project where I share my passion for travel, 
+                            adventure, and storytelling. Through engaging articles, captivating photographs, 
+                            and insightful travel guides, I aim to inspire fellow travelers to explore 
+                            new destinations and create unforgettable memories. Join me on a virtual journey 
+                            around the world as I uncover hidden gems and share travel tips to make your 
+                            adventures unforgettable.</p>
+                        <a href="#" onclick="myFunction('alertMessage')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Student.jpg" alt="work3">
+                    <div class="layer">
+                        <h3>Movie or Series Stream Site Design</h3>
+                        <p>My Movie or Series Stream Site Design project is all about creating a 
+                            seamless and user-friendly platform for movie and series enthusiasts. 
+                            I focus on delivering an immersive streaming experience with a modern and 
+                            intuitive design. From user-friendly navigation to responsive video playback, 
+                            I aim to enhance your entertainment journey.</p>
+                        <a href="https://github.com/PugazhendhiK03/movie-or-series-stream-web-design"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- -------------------------------------------contact-------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>d.anandkumar2002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8489079239</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100015402138054&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/anandkumar-d-1ba349271"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/v4_admire_03?utm_source=qr&igsh=MThoNXVvZDJ6OGFyMQ=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="./Resume - Anand.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright & copy <script>
+            document.write(new Date().getFullYear())
+        </script> all rights reserved</p>
+    </div>
+</div>
+
+
+
+
+<script>   
+function myFunction() {
+  alert("Project is on Progress !");
+}
+</script>
+
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        let sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5JD7dcJn_v_LGp-fB5-DyW9SdWzHFtz_N8moZ3a29-5chr53ys2clgk9PyQXcHFggSQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
